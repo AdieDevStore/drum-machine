@@ -1,9 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300;400&family=Roboto+Flex:opsz@8..144&display=swap');
 
+html {
+  margin: none;
+}
+
 body {
   background-color: #303030;
   color: white;
   font-family: 'roboto condensed', Arial, Helvetica, sans-serif;
 }
 
-
+.container-main {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em;
+  justify-content: center;
+  align-items: center;
+}
