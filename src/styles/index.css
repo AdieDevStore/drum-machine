@@ -5,16 +5,8 @@ html {
 }
 
 body {
-  background-color: #303030;
-  color: white;
+  background-color: #eff2f8;
+  color: black; 
   font-family: 'roboto condensed', Arial, Helvetica, sans-serif;
 }
 
-.container-main {
-  display: flex;
-  width: 100%;
-  margin: 0 auto;
-  padding: 1em;
-  justify-content: center;
-  align-items: center;
-}
