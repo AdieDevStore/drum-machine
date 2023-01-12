@@ -1,0 +1,15 @@
+.screen-container {
+    position: relative;
+    left: 750px;
+    top: 80px;
+    width: 400px;
+    height: 150px;
+}
+
+.screen {
+    position: absolute;
+    border: solid 0.2px black;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+}
