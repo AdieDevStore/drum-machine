@@ -1,5 +1,8 @@
 .screen-container {
     position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
     left: 750px;
     top: 80px;
     width: 400px;
@@ -7,9 +10,10 @@
 }
 
 .screen {
-    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
     border: solid 0.2px black;
     margin: 0 auto;
-    width: 200px;
-    height: 50px;
+    width: 350px;
+    height: 90px;
 }
