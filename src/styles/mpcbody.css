@@ -34,7 +34,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     height: 400px;
     width: 500px;
+    justify-content: space-evenly;
     justify-items: center;
+    align-content: space-evenly;
     align-items: center;
     margin: 0 auto;
 }
@@ -49,10 +51,11 @@
 
 .misc-buttons {
     position: relative;
-    height: 350px;
-    width: 190px;
-    left: 1000px;
-    top : 400px;
+    height: 430px;
+    width: 330px;
+    left: 850px;
+    top : 390px;
+    background-color: lightgray;
 }
 
 .etc-container{
@@ -64,7 +67,7 @@
 .blue-block {
     position: relative;
     left: 650px;
-    top: 38px;
+    top: -40px;
     background-color: #25a5be;
     height: 200px;
     width: 180px;
@@ -72,6 +75,10 @@
 
 .blue-container{
     display: grid;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
     height: 100%;
@@ -80,6 +87,7 @@
 
 .blue-block #blue-1{
     background-color: lightgrey;
-    height: 16px;
-    width: 32px;
+    height: 20px;
+    width: 40px;
+    border-radius: 2%;
 }
