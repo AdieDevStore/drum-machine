@@ -5,20 +5,17 @@
     padding: 0;
     height: 1200px;
     width: 1200px;
+    border-top: 2.5em solid #8E969D;
     border-left: 2em solid #8E969D;
     border-right: 2em solid #8E969D;
-}
-
-.top-shoulder {
-    position: relative;
-    padding: 4.5em;
-    background-color: darkgrey;
+    border-bottom: 8em solid #8E969D;
+    border-radius: 5%;
 }
 
 
 .container-abso {
     position: absolute;
-    left: 180px;
+    left: 80px;
     bottom: 230px;
 }
 
@@ -31,6 +28,8 @@
 
 .pad-grid-container {
     display: grid;
+    background-color: #8E969D;
+    padding: 1em;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     height: 400px;
@@ -41,15 +40,46 @@
 }
 
 .pad-grid-container div {
-    width: 9em;
-    height: 9em;
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 3%;
+    width: 8em;
+    height: 8em;
 }
 
-.bottom-shoulder {
+.misc-buttons {
     position: relative;
-    top: 746px;
-    margin: 0;
-    border: 0;
-    background-color: darkgrey;
-    padding: 5em;
+    height: 350px;
+    width: 190px;
+    left: 1000px;
+    top : 400px;
+}
+
+.etc-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.blue-block {
+    position: relative;
+    left: 650px;
+    top: 38px;
+    background-color: #25a5be;
+    height: 200px;
+    width: 180px;
+}
+
+.blue-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+}
+
+.blue-block #blue-1{
+    background-color: lightgrey;
+    height: 16px;
+    width: 32px;
 }

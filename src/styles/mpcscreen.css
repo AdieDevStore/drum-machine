@@ -10,10 +10,16 @@
 }
 
 .screen {
+    background-color: #25a5be;
     display: inline-block;
     vertical-align: middle;
     border: solid 0.2px black;
     margin: 0 auto;
     width: 350px;
     height: 90px;
+}
+
+.screen p {
+    font-size: 20px;
+    line-height: 50px;
 }
