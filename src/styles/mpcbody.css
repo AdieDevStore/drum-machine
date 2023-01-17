@@ -28,7 +28,7 @@
 
 .pad-grid-container {
     display: grid;
-    background-color: #8E969D;
+    background-color: #b8bbbf;
     padding: 1em;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -43,7 +43,7 @@
 
 .pad-grid-container div {
     text-align: center;
-    background-color: lightgray;
+    background-color: #8E969D;
     border-radius: 3%;
     width: 8em;
     height: 8em;
@@ -59,9 +59,20 @@
 }
 
 .etc-container{
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    height: 100%;
+    width: 95%;
+}
+
+.etc-container #item-1{
+    margin: auto; 
+    width: 50px; 
+    height: 15px;
+    background: ivory;
+    border-radius: 5%;
+
 }
 
 .blue-block {
@@ -86,8 +97,87 @@
 }
 
 .blue-block #blue-1{
-    background-color: lightgrey;
+    background-color: ivory;
     height: 20px;
     width: 40px;
-    border-radius: 2%;
+    border-radius: 5%;
+}
+
+.more-buttons{
+    position: relative;
+    left: 625px;
+    top: -10px;
+    background-color: #eff2f8;
+    height: 200px;
+    width: 180px;
+}
+
+.above-round-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 25%;
+    width: 100%;
+}
+
+#above-round-1 {
+    height: 40%;
+    width: 60px;
+    border-radius: 5%;
+    background-color: #8E969D;
+}
+
+#above-round-2 {
+    height: 40%;
+    width: 60px;
+    border-radius: 5%;
+    background-color: #8E969D;
+}
+
+.round-button-container {
+    position: relative;
+    height: 50%;
+    width: 54%;
+    left: 43px;
+    border-radius: 50%;
+    background-color: #8E969D;
+
+}
+
+.other-button-conatiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 25%;
+    width: 100%;
+}
+
+.other-button-container div {
+    height: 40%;
+    width: 60px;
+    border-radius: 5%;
+    background-color: #8E969D;
+}
+
+#id-other-1{
+    height: 45%;
+    width: 50px;
+    border-radius: 5%;
+    background-color: #8E969D;
+}
+
+#id-other-2{
+    height: 45%;
+    width: 50px;
+    border-radius: 5%;
+    background-color: #8E969D;
+}
+
+#id-other-3{
+    height: 45%;
+    width: 50px;
+    border-radius: 5%;
+    background-color: #8E969D;
 }
