@@ -15,7 +15,7 @@
 
 .container-abso {
     position: absolute;
-    left: 80px;
+    left: 30px;
     bottom: 230px;
 }
 
@@ -66,7 +66,7 @@
 
 .blue-block {
     position: relative;
-    left: 650px;
+    left: 625px;
     top: -40px;
     background-color: #25a5be;
     height: 200px;

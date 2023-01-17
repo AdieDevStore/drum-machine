@@ -51,6 +51,22 @@ function MPCBody() {
                     <div id='blue-1'></div>
                 </div>
             </div>
+            <div className='more-buttons'>
+                <div className='more-btn-container'>
+                    <div className='above-round-cont'>
+                        <div id='above-round-1'></div>
+                        <div id='above-round-2'></div>
+                    </div>
+                    <div className='round-button-container'>
+                        <div className='round-cutton'></div>
+                    </div>
+                    <div className='other-button-conatiner'>
+                        <div id='id-other-1'></div>
+                        <div id='id-other-2'></div>
+                        <div id='id-other-3'></div>
+                    </div>
+                </div>
+            </div>
         </div>
   )
 }
