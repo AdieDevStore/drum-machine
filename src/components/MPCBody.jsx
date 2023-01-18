@@ -3,6 +3,14 @@ import MPCScreen from './MPCScreen'
 import '../styles/mpcbody.css'
 
 function MPCBody() {
+
+    const sound = 'src/assets/Cev_H2.mp3';
+
+    function playAThing() {
+
+        const aud = new Audio(sound);
+        aud.play()
+    }
   
     return (
         <div className="container-main">
@@ -12,7 +20,7 @@ function MPCBody() {
             <div className='container-abso'>
                 <div className='flex-container'>
                     <div className='pad-grid-container'>
-                        <div id="1"></div>
+                        <div id="1" onClick={playAThing}></div>
                         <div id="3"></div>
                         <div id="2"></div>
                         <div id="4"></div>
