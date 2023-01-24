@@ -54,7 +54,7 @@
     height: 430px;
     width: 330px;
     left: 850px;
-    top : 390px;
+    top : 385px;
     background-color: lightgray;
 }
 
@@ -78,7 +78,7 @@
 .blue-block {
     position: relative;
     left: 625px;
-    top: -40px;
+    top: -43px;
     background-color: #25a5be;
     height: 200px;
     width: 180px;

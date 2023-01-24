@@ -57,17 +57,15 @@ function MPCBody() {
         });
     }
 
-    {/*
    
-    Changes syle on key down 
+    // Changes syle on key down 
 
-    */}
     const keyDownStyle = eve => {
         eve.preventDefault; 
 
         pads.forEach(elm => {
             if(elm.id === eve.key) {
-                document.getElementById(elm.id).style.backgroundColor = 'black';
+                document.getElementById(elm.id).style.backgroundColor = '#F0E27B';
             }
         })
     }
@@ -138,7 +136,7 @@ function MPCBody() {
                     <div id="item-1"></div>
                     <div id="item-1"></div>
                 </div>
-            </div>
+            </div> 
             <div className='blue-block'>
                 {/* These are non-functional buttons*/}
                 <div className="blue-container">
