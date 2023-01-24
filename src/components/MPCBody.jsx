@@ -46,18 +46,51 @@ function MPCBody() {
     ])
 
     const handleKeyDown = event => {
-        console.log(event.key)
+        
+        event.preventDefault;
+
         pads.forEach(element => {
             if(element.id === event.key) {
                 const audio = new Audio(element.src)
                 audio.play()
-            }            
+            }  
         });
     }
 
+    {/*
+   
+    Changes syle on key down 
+
+    */}
+    const keyDownStyle = eve => {
+        eve.preventDefault; 
+
+        pads.forEach(elm => {
+            if(elm.id === eve.key) {
+                document.getElementById(elm.id).style.backgroundColor = 'black';
+            }
+        })
+    }
+
+    // Changes style on key up
+
+    const keyUpStyle = eve => {
+        eve.preventDefault;
+
+        pads.forEach(elm => {
+            if (elm.id === eve.key){
+                document.getElementById(elm.id).style.backgroundColor = "#8E969D";
+            } 
+        })
+    }
+
+    document.body.addEventListener('keydown', handleKeyDown)
+    document.body.addEventListener('keydown', keyDownStyle)
+    document.body.addEventListener('keyup', keyUpStyle)
+
     
     return (
-        <div className="container-main" tabIndex={1} onKeyDown={handleKeyDown}>
+        <div className="container-main">
             <div className='screen-container'>
                 <MPCScreen />
             </div>
