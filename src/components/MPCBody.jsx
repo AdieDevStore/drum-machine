@@ -1,28 +1,61 @@
 import React, { useEffect, useState } from 'react'
 import MPCScreen from './MPCScreen'
 import '../styles/mpcbody.css'
-import useSound from 'use-sound';
-import {} from 'react';
 
 function MPCBody() {
 
-    const keyboard = ['w','e','r','s','d','f','x','c','v'];
+    const [pads, setPads] = useState([
+        
+        {
+            id: "q",
+            src: "src/assets/Heater-1.mp3"
+        },
+        {
+            id: "w",
+            src: "src/assets/Heater-2.mp3"
+        }, 
+        {
+            id: "e",
+            src: "src/assets/Heater-3.mp3"
+        },
+        {
+            id: "a",
+            src: "src/assets/Heater-4_1.mp3"
+        },
+        {
+            id: "s",
+            src: "src/assets/Heater-6.mp3"
+        },
+        {
+            id: "d",
+            src: "src/assets/Kick_n_Hat.mp3"
+        },
+        {
+            id: 'z',
+            src: "src/assets/Cev_H2.mp3"
+        },
+        {
+            id: "x",
+            src: "src/assets/RP4_KICK_1.mp3"
+        },
+        {
+            id: "c",
+            src: "src/assets/Dsc_Oh.mp3"
+        }
+
+    ])
 
     const handleKeyDown = event => {
-        event.preventDefault;
-        
-        keyboard.forEach(key => {
-            if (key === event.key){
-                playPad()
-            }
-        })
+        console.log(event.key)
+        pads.forEach(element => {
+            if(element.id === event.key) {
+                const audio = new Audio(element.src)
+                audio.play()
+            }            
+        });
     }
 
-    function playPad(path){
-        const [play] = useSound(path);
-        return play
-    }
-  
+    
     return (
         <div className="container-main" tabIndex={1} onKeyDown={handleKeyDown}>
             <div className='screen-container'>
@@ -31,15 +64,15 @@ function MPCBody() {
             <div className='container-abso'>
                 <div className='flex-container'>
                     <div className='pad-grid-container' >
-                        <div id="1" onClick={playPad("src/assets/Heater-1.mp3")}></div>
-                        <div id="3" onClick={playPad("src/assets/Heater-2.mp3")}></div>
-                        <div id="2" onClick={playPad("src/assets/Heater-3.mp3")}></div>
-                        <div id="4" onClick={playPad("src/assets/Heater-4_1.mp3")}></div>
-                        <div id="5" onClick={playPad("src/assets/Heater-6.mp3")}></div>
-                        <div id="6" onClick={playPad("src/assets/Kick_n_Hat.mp3")}></div>
-                        <div id="7" onClick={playPad("src/assets/Cev_H2.mp3")}></div>
-                        <div id="8" onClick={playPad("src/assets/RP4_KICK_1.mp3")}></div>
-                        <div id="9" onClick={playPad("src/assets/Dsc_Oh.mp3")}></div>
+                        <div id="q"></div>
+                        <div id="w"></div>
+                        <div id="e"></div>
+                        <div id="a"></div>
+                        <div id="s"></div>
+                        <div id="d"></div>
+                        <div id="z"></div>
+                        <div id="x"></div>
+                        <div id="c"></div>
                     </div>
                 </div>
             </div>
