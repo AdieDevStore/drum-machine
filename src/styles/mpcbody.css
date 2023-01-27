@@ -1,3 +1,18 @@
+.control-container{
+    position: relative;
+    top: 100px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 200px;
+    width: 600px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#cntrl {
+    text-align: center;
+}
+
 .container-main {
     position: relative;
     width: 100%;
@@ -54,7 +69,7 @@
     height: 430px;
     width: 330px;
     left: 850px;
-    top : 385px;
+    top : 340px;
     background-color: lightgray;
 }
 
@@ -69,16 +84,24 @@
 .etc-container #item-1{
     margin: auto; 
     width: 50px; 
-    height: 15px;
+    height: 30px;
     background: ivory;
     border-radius: 5%;
 
 }
 
+.etc-container #item-2 {
+    width: 50px; 
+    height: 30px;
+    background: rgb(148, 49, 45);
+    border-radius: 5%;
+    margin: auto
+}
+
 .blue-block {
     position: relative;
     left: 625px;
-    top: -43px;
+    top: -90px;
     background-color: #25a5be;
     height: 200px;
     width: 180px;
@@ -106,7 +129,7 @@
 .more-buttons{
     position: relative;
     left: 625px;
-    top: -10px;
+    top: -58px;
     background-color: #eff2f8;
     height: 200px;
     width: 180px;

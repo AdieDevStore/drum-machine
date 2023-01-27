@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import MPCScreen from './MPCScreen'
 import '../styles/mpcbody.css'
 
 function MPCBody() {
@@ -89,9 +88,45 @@ function MPCBody() {
     
     return (
         <div className="container-main">
-            <div className='screen-container'>
-                <MPCScreen />
-            </div>
+            <div className='inner-heading'></div>
+                <div className='control-container'>
+                <div id='cntrl'>
+                    <h3>Q</h3>
+                    <p>Heater 1</p>
+                </div>
+                <div id='cntrl'>
+                    <h3>W</h3>
+                    <p>Heater 2</p>
+                </div>
+                <div id='cntrl'>
+                    <h3>E</h3>
+                    <p>Heater 3</p>
+                </div>
+                <div id='cntrl'>
+                    <h3>A</h3>
+                    <p>Heater 4</p>
+                </div>
+                <div id='cntrl'>
+                    <h3>S</h3>
+                    <p>Clap</p>
+                </div>
+                <div id='cntrl'>
+                    <h3>D</h3>
+                    <p>Kick & High-hat</p>
+                </div>
+                <div id='cntrl'>
+                    <h3>Z</h3>
+                    <p>Close high hat</p>
+                </div>
+                <div id='cntrl'>
+                    <h3>X</h3>
+                    <p>Kick</p>
+                </div>
+                <div id='cntrl'>
+                    <h3>C</h3>
+                    <p>Open High-hat</p>
+                </div>
+                </div>
             <div className='container-abso'>
                 <div className='flex-container'>
                     <div className='pad-grid-container' >
@@ -127,13 +162,13 @@ function MPCBody() {
                     <div id="item-1"></div>
                     <div id="item-1"></div>
                     <div id="item-1"></div>
+                    <div id="item-2"></div>
                     <div id="item-1"></div>
                     <div id="item-1"></div>
                     <div id="item-1"></div>
-                    <div id="item-1"></div>
-                    <div id="item-1"></div>
-                    <div id="item-1"></div>
-                    <div id="item-1"></div>
+                    <div id="item-2"></div>
+                    <div id="item-2"></div>
+                    <div id="item-2"></div>
                     <div id="item-1"></div>
                 </div>
             </div> 
